@@ -1,7 +1,3 @@
-/*Olá João e time NUMEM, espero que estejam bem! Escolhi o JavaScript, pois tenho mais familiaridade devido ao curso que estou fazendo de Front-end. 
-Espero que gostem do resultado. QUE A FORÇA ESTEJA COM VOCÊS.*/
-
-
 /*Opções*/
 const inputRadio = document.querySelectorAll('input[name=option]');
 const game = document.querySelector('.game');
