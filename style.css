@@ -15,7 +15,7 @@ audio, .game{
 }
 
 
-/*Animações*/
+
 @keyframes fade-in-move-down{
     0% {opacity: 0;transform: translateY(-3rem);}
     100% {opacity: 1;transform: translateY(0);}
@@ -83,7 +83,7 @@ audio, .game{
     background: #080808;
 }
 
-/*Placar*/
+
 .placar{
     display: flex;
     justify-content: center;
@@ -126,7 +126,7 @@ audio, .game{
     font-weight: bolder;
 }
 
-/*Escolhas*/
+
 
 .escolhas{
     display: flex;
@@ -193,7 +193,7 @@ audio, .game{
     filter: grayscale(1);
 }
 
-/* muda a foto de acordo com o resultado */
+
 .ganhou .player .foto{
     background: url(imgs/grogu-happy.jpg);
     background-size: cover;
@@ -246,7 +246,7 @@ audio, .game{
     color: #000000;
     text-transform: uppercase;
 }
-/*Game OVER */
+
 .game-over, .endgame, .game-empate{
     display: none;
 }
@@ -298,7 +298,7 @@ audio, .game{
     color: #000000;
     margin: 5px 0 11px 0;
 }
-/*Boas vindas*/
+
 .boas-vindas-container{
     display: flex;
     flex-direction: row;
@@ -367,7 +367,7 @@ audio, .game{
     color: #000000;
 }
 
-/*Radio*/
+
 fieldset {
     border: 0;
     padding: 0;
@@ -404,7 +404,7 @@ fieldset label {
 }
 
 
-/*Copy*/
+
 .copy{
     position: absolute;
     left: 50%;
@@ -443,7 +443,7 @@ fieldset label {
     justify-content: center
 }
 
-/* Responsivo */
+
 @media only screen and (max-width: 1190px) {
     .boas-vindas ul li br{
         display: none;

@@ -1,26 +1,26 @@
-/*Opções*/
+
 const inputRadio = document.querySelectorAll('input[name=option]');
 const game = document.querySelector('.game');
 const boasvindas = document.querySelector('.boas-vindas');
 
-/*Placar*/
+
 var vitoria = 0;
 var derrota = 0;
 var empate = 0;
 
-/* Ativa o botão ao selecionar opção */
+
 inputRadio.forEach((elem) => {
     elem.addEventListener("change", function(event) {
         buttonJogar.disabled = false;
     });
 });
 
-/*Botões*/
+
 const buttonStart = document.querySelector('.start');
 const buttonJogar = document.querySelector('.jogar');
 const buttonReiniciar = document.querySelectorAll('.reiniciar');
 
-/*Iniciar jogo*/
+
 buttonStart.addEventListener('click', function() {
     boasvindas.style.display = 'none';
     game.style.display = 'block';
@@ -29,7 +29,7 @@ buttonStart.addEventListener('click', function() {
 
 buttonJogar.disabled = true;
 
-/* Itens do jogo */
+
 const adversario = document.querySelector('.adversario span');
 var jokenpo = ['👊', '✋', '✌️'];
 const resultado = document.querySelector('.resultado p')
@@ -55,7 +55,7 @@ icons.forEach(function(icon) {
 })
 
 
-/* Countdown */
+
 function countdown() {
     game.classList.remove('ganhou');
     game.classList.remove('perdeu');
@@ -85,7 +85,7 @@ function comparar() {
     const inputValor = document.querySelector('input[name="option"]:checked').value;
     var jokenpoArray = jokenpo[Math.floor(Math.random() * jokenpo.length)];
 
-    /*Empate*/
+    
     function initEmpate() {
         placarEmpate = empate++; 
         resultado.innerText = 'Empate 😕'; 
@@ -97,7 +97,7 @@ function comparar() {
         
     }
     
-    /*Derrota*/
+    
     function initDerrota() {
         var placarDerrota = derrota++; 
         resultado.innerText = 'Derrota 😥'; 
@@ -108,7 +108,7 @@ function comparar() {
         game.classList.add('perdeu');
     }
     
-    /*Vitoria*/
+    
     function initVitoria() {
         var placarVitoria = vitoria++; 
         resultado.innerText = 'Vitoria 😆'; 
@@ -120,7 +120,7 @@ function comparar() {
 
     }
     
-    /* Fim de jogo */
+    
     function gameOver() {
         document.querySelector('.game-over').classList.add('visible');
     }
@@ -132,7 +132,7 @@ function comparar() {
     }
     
 
-    /* IFs */
+    
     if(inputValor === 'pedra' && jokenpoArray === '👊' || inputValor === 'papel' && jokenpoArray === '✋' || inputValor === 'tesoura' && jokenpoArray === '✌️') { 
         initEmpate();
     } else if(inputValor === 'pedra' && jokenpoArray === '✋' || inputValor === 'papel' && jokenpoArray === '✌️' || inputValor === 'tesoura' && jokenpoArray === '👊'){
